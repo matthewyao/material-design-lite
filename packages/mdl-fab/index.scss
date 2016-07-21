@@ -1,0 +1,37 @@
+@import "variables";
+
+.mdl-fab {
+  display: inline-flex;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+  cursor: pointer;
+  overflow: hidden;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  &:active {
+    @include mdl-shadow-4dp;
+    background-color: var(--mdl-button-active-shade);
+  }
+
+  &:focus:not(:active) {
+    @include mdl-focus-shadow;
+    background-color: var(--mdl-button-active-shade);
+  }
+
+  &--plain {
+    background-color: grey;
+  }
+
+  &--mini {
+    width: 40px;
+    height: 40px;
+  }
+}

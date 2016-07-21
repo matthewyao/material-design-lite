@@ -1,0 +1,19 @@
+$mdl-shadow-key-umbra-opacity: .2;
+$mdl-shadow-key-penumbra-opacity: .14;
+$mdl-shadow-ambient-shadow-opacity: .12;
+
+@mixin mdl-focus-shadow() {
+  box-shadow: 0 0 8px rgba(0, 0, 0, .18), 0 8px 16px rgba(0, 0, 0, .36);
+}
+
+@mixin mdl-shadow-4dp() {
+  box-shadow:
+    0 2px 4px -1px rgba(0, 0, 0, $mdl-shadow-key-umbra-opacity),
+    0 4px 5px 0 rgba(0, 0, 0, $mdl-shadow-key-penumbra-opacity),
+    0 1px 10px 0 rgba(0, 0, 0, $mdl-shadow-ambient-shadow-opacity);
+}
+
+:root {
+  --mdl-accent-color: rgb(255, 64, 129);
+  --mdl-button-active-shade: rgba(0, 0, 0, .12);
+}
